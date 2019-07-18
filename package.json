@@ -1,0 +1,31 @@
+{
+  "name": "reactjs-weather-app",
+  "version": "1.0.0",
+  "description": "a react application",
+  "main": "app.js",
+  "scripts": {
+    "test": "npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anarchymonkey/reactjs-weather-app.git"
+  },
+  "keywords": [
+    "node",
+    "react",
+    "express"
+  ],
+  "author": "Aniket Batabyal (anarchymonkey)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anarchymonkey/reactjs-weather-app/issues"
+  },
+  "homepage": "https://github.com/anarchymonkey/reactjs-weather-app#readme",
+  "dependencies": {
+    "axios": "^0.19.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "react": "^16.8.6",
+    "request": "^2.88.0"
+  }
+}
