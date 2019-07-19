@@ -4,23 +4,14 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React1
-        </a>
-      </header>
-    </div>
-  );
+
+      <form action='/' method='POST'>
+        <label for="queryData">
+          <h1><img src={logo} alt='alt img'></img></h1>
+          <input type='text' name="text" placeholder="please input a query"></input>
+        </label>
+      </form>
+  )
 }
 
 export default App;
