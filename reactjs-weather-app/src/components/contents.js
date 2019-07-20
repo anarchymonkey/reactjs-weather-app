@@ -1,9 +1,23 @@
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.css';
 
-function Content(){
 
-    return (
-        <h1>Hey this is my content file</h1>
+const Content = (props)=>{
+
+    return(
+        <tbody>
+            <tr>
+               <td>{props.index}</td>
+                <td>{props.date}</td>
+                <td>{props.city}</td>
+                <td>{props.country}</td>
+                <td>{props.humidity}</td>
+                <td>{props.description}</td>
+                <td>{props.maxTemp}</td>
+                <td>{props.minTemp}</td>
+            </tr>
+
+        </tbody>
     )
 }
 
