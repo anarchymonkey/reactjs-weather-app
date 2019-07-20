@@ -15,7 +15,8 @@ class App extends React.Component{
     description:[],
     min_temp: [],
     max_temp: [],
-    date : []
+    date : [],
+    error : ""
   }
 
   callApi = async(e)=>{
@@ -65,7 +66,8 @@ class App extends React.Component{
      description:descriptionArray,
      max_temp:maxTemperature,
      min_temp: minTemprature,
-     date: dateArray
+     date: dateArray,
+     error : ""
    });
  }
  else{
@@ -78,7 +80,8 @@ class App extends React.Component{
      description:[],
      max_temp: [],
      min_temp: [],
-     date: []
+     date: [],
+     error : "please enter valid data"
    });
  }
   }
@@ -87,7 +90,7 @@ render(){
     let desc = this.state.description.map( (values,index)=>{
       console.log({values})
       return(
-<Content  description = {values}/>
+<Content  description = {values} index ={index} />
   )
 })
 
@@ -139,7 +142,8 @@ render(){
           country = {country}
           maxTemp = {maxTemperature}
           minTemp = {minTemperature}
-          date = {date} />
+          date = {date}
+          error = {this.state.error} />
 
       </table>
     </div>
