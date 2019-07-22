@@ -8,7 +8,6 @@ const Content = (props)=>{
         <tbody>
             <h1>{props.error}</h1>
             <tr>
-               <td>{props.index}</td>
                 <td>{props.date}</td>
                 <td>{props.city}</td>
                 <td>{props.country}</td>

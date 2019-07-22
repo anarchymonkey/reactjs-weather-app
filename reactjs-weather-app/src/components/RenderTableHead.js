@@ -6,7 +6,6 @@ const TableHead = ()=>{
     return(
         <thead>
         <tr>
-            <th>#</th>
             <th>Date and Time</th>
             <th>City</th>
             <th>Country</th>
